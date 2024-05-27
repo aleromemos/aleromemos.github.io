@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1, h2{
+            font-family: nexa;
+        }
+
+        .opcion:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .correcta {
+            background-color: green;
+            transition: background-color 1s;
+        }
+        .incorrecta {
+            background-color: red;
+            transition: background-color 1s;
+        }
+        .opcion {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px;
+            transition: transform 0.3s;
+            display: inline-block;
+        }
+        #opciones {
+            display: flex;
+        }
+    </style>
+    <link rel="stylesheet" href="Dictionary.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>English Vocabulary</title>
+</head>
+<body>
+    <h1 class="web-title">The English Dictionary</h1>
+    <br><h2 class="introduction">Here you will see everything about <strong class="shapes">shapes</strong>, <strong class="colors">colors</strong> and <strong class="feelings">feelings</strong>.</h2>
+    <br><a href="#shapes-title" class="clickshapes">Go to shapes</a>
+    <br><a href="#feelings-title" class="clickfeelings">Go to feelings</a><br>
+
+    <br><h2 class="titlecol" id="colors-title">Colors</h2>
+    <br><h2 class="colorquestion">Before we start, do you know what a color is?</h2>
+
+    <div>
+        <div style="float:left; margin-right: 24px; margin-bottom: 10px;">
+            <img class="imagecolorquestion" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Lápices_de_colores_01.jpg/300px-Lápices_de_colores_01.jpg">
+        </div>
+
+        <div>
+            <p class="colortext">According to HunterLab's definition, "As it turns out, color is simply a perception of energy and specific wavelengths of light that reach our eyes. It can also vary based on the biology of a person and how their brain receives signals, so two people may not see an object as the exact same color."</p>
+        </div>
+    </div>
+
+    <section class="content">
+        <div class="counter" id="counter">
+
+            <div class="row">
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="1">
+                    <div class="img-container">
+                        <img class="ambar-img" src="https://todosobrecolores.com/wp-content/uploads/2020/11/color-ambar.png" width="100px" height="100px" alt="Ámbar">
+                    </div>
+                    <p class="english-name">Ambar</p>
+                    <span class="spanish-name">Ámbar</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="2">
+                    <div class="img-container">
+                        <img class="yellow-img" src="https://www.colores.org.es/imagenes_colores/amarillo-html.jpg" width="100px" height="100px" alt="Amarillo" class="yellow">
+                    </div>
+                    <p class="english-name" id>Yellow</p>
+                    <span class="spanish-name">Amarillo</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="3">
+                    <div class="img-container">
+                        <img class="aquamarine-img" src="https://www.colores.org.es/imagenes_colores/aguamarina-medio.jpg" alt="Aguamarina" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Aquamarine</p>
+                    <span class="spanish-name">Aguamarina</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="4">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/amatista.jpg" alt="Amatista" img class="Amethyst" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Amethyst</p>
+                    <span class="spanish-name">Amatista</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="5">
+                    <div class="img-container">
+                        <img src="https://www.publicdomainpictures.net/pictures/300000/nahled/jet-black.jpg" alt="Azabache" class="jetblack" img class="jet-black" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Jet-black</p>
+                    <span class="spanish-name">Azabache</span>
+                </div>
+
+            </div>
+
+            <div class="row">
+                
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="6">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/azul.jpg" alt="Azul" class="blue" img class="blue" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Blue</p>
+                    <span class="spanish-name">Azul</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="7">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/beige.jpg" alt="Beige" class="beige" img class="beige" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Beige</p>
+                    <span class="spanish-name">Beige</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="8">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/blanco.jpg" alt="Blanco" class="white" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">White</p>
+                    <span class="spanish-name">Blanco</span>
+
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="11">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/carbon.jpg" alt="carbon" class="charcoal" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Charcoal</p>
+                    <span class="spanish-name">Carbón</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="12">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/carmesi.jpg" alt="carmesí" class="crimson" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Crimson</p>
+                    <span class="spanish-name">Carmesí</span>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="13">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/carmin.jpg" alt="carmín" class="carmine" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Carmine</p>
+                    <span class="spanish-name">Carmín</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="14">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/celeste.jpg" alt="celeste" class="skyblue" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Sky blue</p>
+                    <span class="spanish-name">Celeste</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="15">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/cian.jpg" alt="cian" class="cyan" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Cyan</p>
+                    <span class="spanish-name">Cian</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="16">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/cobre.jpg" alt="cobre" class="copper" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Copper</p>
+                    <span class="spanish-name">Cobre</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="17">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/dorado.jpg" alt="dorado" class="golden" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Golden</p>
+                    <span class="spanish-name">Dorado</span>
+                </div>
+
+            </div> 
+
+            <div class="row">
+                
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="18">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/esmeralda.jpg" alt="esmeralda" class="Emerald" width="100px" height="100px">
+                    </div>
+                    <p class="english-name" id>Emerald</p>
+                    <span class="spanish-name">Esmeralda</span>
+                </div>
+                
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="19">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/fucsia.jpg" alt="fuscsia" class="fuchsia" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Fuchsia</p>
+                    <span class="spanish-name">Fucsia</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="20">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/gris.jpg" alt="gris" class="gray" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Gray</p>
+                    <span class="spanish-name">Gris</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="21">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/hueso.jpg" alt="hueso" class="bone" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Bone</p>
+                    <span class="spanish-name">Hueso</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="22">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/indigo.jpg" alt="índigo" class="indigo" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Indigo</p>
+                    <span class="spanish-name">índigo</span>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="23">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/jazmin.jpg" alt="jazmín" class="jasmine" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Jasmine</p>
+                    <span class="spanish-name">Jazmín</span>
+                </div>
+                
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="24">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/jade.jpg" alt="jade" class="jadee" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Jade</p>
+                    <span class="spanish-name">Jade</span>
+                </div>
+                
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="25">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/caqui.jpg" alt="caqui" class="khaki" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Khaki</p>
+                    <span class="spanish-name">Caqui</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="26">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/lavanda-brillante.jpg" alt="lavanda" class="lavender" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Lavender</p>
+                    <span class="spanish-name">Lavanda</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="27">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/lila.jpg" alt="lila" class="lilac" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Lilac</p>
+                    <span class="spanish-name">Lila</span>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="28">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/lima-html.jpg" alt="lima" class="lime" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Lime</p>
+                    <span class="spanish-name">Lima</span>
+                </div>
+                
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="29">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/magenta.jpg" alt="magenta" class="magenta" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Magenta</p>
+                    <span class="spanish-name">Magenta</span>
+                </div>
+                
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="30">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/malva.jpg" alt="malva" class="mauve" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Malva</p>
+                    <span class="spanish-name">Mauve</span>
+                </div>
+                
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="31">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/marfil.jpg" alt="marfil" class="ivory" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Ivory</p>
+                    <span class="spanish-name">Marfil</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="32">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/menta.jpg" alt="menta" class="mint" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Mint</p>
+                    <span class="spanish-name">Menta</span>
+                </div>
+
+            </div>
+
+            <div class="row">
+                
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="33">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/mostaza.jpg" alt="mostaza" class="mustard" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Mustard</p>
+                    <span class="spanish-name">Mostaza</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="34">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/naranja-web.jpg" alt="naranja" class="orange" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Orange</p>
+                    <span class="spanish-name">Naranja</span>
+                </div>
+                
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="35">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/negro.jpg" alt="negro" class="black" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Black</p>
+                    <span class="spanish-name">Negro</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="36">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/ocre.jpg" alt="ocre" class="ocher" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Ocher</p>
+                    <span class="spanish-name">Ocre</span>
+                </div>
+                
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="37">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/oro.jpg" alt="oro" class="gold" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Gold</p>
+                    <span class="spanish-name">Oro</span>
+                </div>
+
+                
+            </div> 
+
+            <div class="row">
+                
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="38">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/oliva.jpg" alt="oliva" class="olive" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Olive</p>
+                    <span class="spanish-name">Oliva</span>
+                </div>
+                
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="39">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/pistacho.jpg" alt="pistacho" class="pistachio" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Pistachio</p>
+                    <span class="spanish-name">Pistacho</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="40">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/plata.jpg" alt="plata" class="silver" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Silver</p>
+                    <span class="spanish-name">Plata</span>
+                </div>
+                
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="41">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/purpura.jpg" alt="púrpura" class="purple" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Purple</p>
+                    <span class="spanish-name">Púrpura</span>
+                </div>
+                
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="42">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/rojo-html.jpg" alt="rojo" class="red" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Red</p>
+                    <span class="spanish-name">Rojo</span>
+                </div>
+                
+            </div>
+
+            <div class="row">
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="43">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/rosa.jpg" alt="rosa" class="pink" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Pink</p>
+                    <span class="spanish-name">Rosa</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="44">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/rubi.jpg" alt="rubí" class="rubi" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Rubi</p>
+                    <span class="spanish-name">Rubí</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="45">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/salmon.jpg" alt="salmón" class="salmon" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Salmón</p>
+                    <span class="spanish-name">Salmon</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="46">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/turquesa.jpg" alt="turquesa" class="turquoise" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Turquoise</p>
+                    <span class="spanish-name">Turquesa</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="47">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/uva.jpg" alt="uva" class="Grape" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Grape</p>
+                    <span class="spanish-name">Uva</span>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="48">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/verde-html.jpg" alt="verde" class="Green" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Green</p>
+                    <span class="spanish-name">Verde</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="49">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/vino.jpg" alt="vino" class="wine" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Wine</p>
+                    <span class="spanish-name">Vino</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="52">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/sandia.jpg" alt="Sandía" class="watermelon" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Watermelon</p>
+                    <span class="spanish-name">Sandía</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="50">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/violeta.jpg" alt="violeta" class="violet" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Violet</p>
+                    <span class="spanish-name">Violeta</span>
+                </div>
+
+                <div id="follow-up" class="item" onclick="load(this)" data-item-id="51">
+                    <div class="img-container">
+                        <img src="https://www.colores.org.es/imagenes_colores/zafiro.jpg" alt="zafiro" class="sapphire" width="100px" height="100px">
+                    </div>
+                    <p class="english-name">Sapphire</p>
+                    <span class="spanish-name">Zafiro</span>
+                </div>
+            </div>         
+        </div>
+        
+        <div class="selection" id="selection">
+            <div class="close" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" width="200px" height="300px" alt="" id="img">
+                <h2 id="modelo">MODEL 1</h2>
+                <p id="descripcion">Description Model 1</p>
+
+                <span class="class-1" id="id-1">1</span>
+
+                <div class="row">
+                    <div class="size">
+
+                        </select>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br><a href="#colors-title" class="clickcolors">Go to colors</a>
+    <br><a href="#shapes-title" class="clickshapes">Go to shapes</a>
+
+    <br><h2 id="shapes-title" class="shapesti">Shapes</h2>   
+
+    <br><h2 class="shapesquestion">Before we start, do you know what a shape is?</h2>
+    <div>
+        <div style="float:left; margin-right: 20px; margin-bottom: 10px;">
+            <img class="imageshapesquestion" src="https://upload.wikimedia.org/wikipedia/commons/2/26/Plastic_vormenstoof_of_puzzelbal_van_“Tupperware_Toy”%2C_objectnr_83212.JPG">
+        </div>
+
+        <div class="div-shapes-text">
+            <p class="shapestext">According to SplashLearn's definition, "In geometry, a shape can be defined as the form of an object or its outline, outer boundary or outer surface."</p>
+        </div>
+    </div>
+
+    <section class="content">
+        <div class="counter" id="counter"><div class="row">
+            <div id="follow-up" class="item" onclick="load(this)" data-item-id="53">
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/c1jQ3StC/Straightline.jpg" alt="linearecta" class="straightline" width="100px" height="100px">
+                </div>
+                <p class="english-name">Straight line</p>
+                <span class="spanish-name">Línea recta</span>
+            </div>
+
+            <div id="follow-up" class="item" onclick="load(this)" data-item-id="54">
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/52HFhNJT/Curvedline.jpg" alt="lineacurva" class="curvedline" width="100px" height="100px">
+                </div>
+            <p class="english-name">Curved line</p>
+            <span class="spanish-name">Línea curva</span>
+            </div>
+
+             <div id="follow-up" class="item" onclick="load(this)" data-item-id="55">
+                 <div class="img-container">
+                    <img src="https://i.postimg.cc/Ss42Y69b/Triangle.jpg" alt="triangulo" class="triangle" width="100px" height="100px">
+                </div>
+            <p class="english-name">Triangle</p>
+            <span class="spanish-name">Triángulo</span>
+            </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="56">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/mZ8zhF2K/Equilateral-triangle.jpg" alt="trianguloequilatero" class="equilateraltriangle" width="100px" height="100px">
+            </div>
+            <p class="english-name">Equilateral triangle</p>
+            <span class="spanish-name">Triángulo equilátero</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="57">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/W3sz12R2/Isosceles-triangle.jpg" alt="trianguloisosceles" class="isoscelestriangle" width="100px" height="100px">
+            </div>
+            <p class="english-name">Isosceles triangle </p>
+            <span class="spanish-name">Triángulo isósceles</span>
+        </div>
+    </div>
+
+    <div class="counter" id="counter"><div class="row">
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="58">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/cLqsJsYV/Tri-ngulo-rect-ngulo-escaleno.png" alt="trianguloescaleno" class="scalenetriangle" height="100px" width="100px">
+            </div>
+            <p class="english-name">Scalene triangle</p>
+            <span class="spanish-name">Triángulo escaleno</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="59">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/pTVVtq8r/Tri-ngulo-rect-ngulo-escaleno.png" alt="triangulorecto" class="righttriangle" height="100px" width="100px">
+            </div>
+            <p class="english-name">Right triangle</p>
+            <span class="spanish-name">Triángulo recto</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="60">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/nhvnj6GM/triangulo-escaleno-obtusangulo.webp" alt="trianguloobtuso" class="obtusetriangle" height="100px" width="100px">
+            </div>
+            <p class="english-name">Obtuse triangle</p>
+            <span class="spanish-name">Triángulo obtuso</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="61">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/x8wSqRkK/Tri-ngulo-acut-ngulo-escaleno.png" alt="trianguloacutangulo" class="acutetriangle" height="100px" width="100px">
+            </div>
+            <p class="english-name">Acute triangle</p>
+            <span class="spanish-name">Triángulo acutángulo</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="62">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/0Nk16rNH/1200px-Icono-Cuadrado.png" alt="cuadrado" class="square" height="100px" width="100px">
+            </div>
+            <p class="english-name">Square</p>
+            <span class="spanish-name">Cuadrado</span>
+        </div>
+
+    </div>
+
+    <div class="counter" id="counter"><div class="row">
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="63">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/8cr286ys/1200px-Icono-Rect-ngulo.png" alt="rectangulo" class="rectangle" height="100px" width="100px">
+            </div>
+            <p class="english-name">Rectangle</p>
+            <span class="spanish-name">Rectángulo</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="64">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/L4cXJBFC/1200px-Icono-Rombo.png" alt="rombo" class="rhombus" height="100px" width="100px">
+            </div>
+            <p class="english-name">Rhombus</p>
+            <span class="spanish-name">Rombo</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="65">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/mrgZvm7D/1200px-Icono-Romboide.png" alt="romboide" class="Rhomboid" height="100px" width="100px">
+            </div>
+            <p class="english-name">Rhomboid</p>
+            <span class="spanish-name">Romboide</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="66">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/6Qb6tChh/trapezoide.webp" alt="trapezoide" class="Trapezium" height="100px" width="100px">
+            </div>
+            <p class="english-name">Trapezium</p>
+            <span class="spanish-name">Trapezoide</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="67">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/KzKGz4qh/Trapecio.webp" alt="trapecio" class="Trapezoid" height="100px" width="100px">
+            </div>
+            <p class="english-name">Trapezoid</p>
+            <span class="spanish-name">Trapecio</span>
+        </div>
+    </div>
+
+    <div class="counter" id="counter"><div class="row">
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="68">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/LXrHZRwY/5722937e924de-paralelogramo.webp" alt="paralelogramo" class="parallelogram" height="100px" width="100px">
+            </div>
+            <p class="english-name">Parallelogram</p>
+            <span class="spanish-name">Paralelogramo</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="69">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/L5LmtwFy/kite.png" alt="deltoide" class="kite" height="100px" width="100px">
+            </div>
+            <p class="english-name">Kite</p>
+            <span class="spanish-name">Deltoide</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="71">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/gkyYrCDj/cross.png" alt="cruz" class="cross" height="100px" width="100px">
+            </div>
+            <p class="english-name">Cross</p>
+            <span class="spanish-name">Cruz</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="72">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/cH8WW2Cs/star-shape-md.png" alt="estrella" class="star" height="100px" width="100px">
+            </div>
+            <p class="english-name">Star</p>
+            <span class="spanish-name">Estrella</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="70">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/3rvrQ40g/1200px-05-L-Pent-gono.png" alt="pentagono" class="pentagon" height="100px" width="100px">
+            </div>
+            <p class="english-name">Pentagon</p>
+            <span class="spanish-name">Pentágono</span>
+        </div>
+
+    </div>
+
+    <div class="counter" id="counter"><div class="row">
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="73">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/XqSbYLB9/240px-06-L-Hex-gono.png" alt="hexagono" class="hexagon" height="100px" width="100px">
+            </div>
+            <p class="english-name">Hexagon</p>
+            <span class="spanish-name">Hexágono</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="74">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/hPnnFCBB/1200px-07-L-Hept-gono.png" alt="heptagono" class="heptagon" height="100px" width="100px">
+            </div>
+            <p class="english-name">Heptagon</p>
+            <span class="spanish-name">Heptágono</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="75">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/q73DvTsZ/1200px-08-L-Oct-gono.pngg" alt="octagono" class="octagon" height="100px" width="100px">
+            </div>
+            <p class="english-name">Octagon</p>
+            <span class="spanish-name">Octágono</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="76">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/YSzg3DMC/1200px-09-L-Ene-gono.png" alt="eneagono" class="nonagon" height="100px" width="100px">
+            </div>
+            <p class="english-name">Nonagon</p>
+            <span class="spanish-name">Eneagon</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="77">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/4y96RzrK/1200px-10-L-Dec-gono.png" alt="decagono" class="decagon" height="100px" width="100px">
+            </div>
+            <p class="english-name">Decagon</p>
+            <span class="spanish-name">Decágono</span>
+        </div>
+    </div>
+
+    <div class="counter" id="counter"><div class="row">
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="78">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/0NXD6WvM/Circle-transparent.png" alt="circulo" class="circle" height="100px" width="100px">
+            </div>
+            <p class="english-name">Circle</p>
+            <span class="spanish-name">Círculo</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="79">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/1Xwqjyqw/semicircle.jpg" alt="semicirculo" class="semicircle" height="100px" width="100px">
+            </div>
+            <p class="english-name">Semi-Circle</p>
+            <span class="spanish-name">Semicírculo</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="80">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/wTYJsRCV/oval.png" alt="ovalo" class="oval" height="100px" width="100px">
+            </div>
+            <p class="english-name">Oval</p>
+            <span class="spanish-name">Óvalo</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="81">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/R0hnz7tM/Elipse.png" alt="elipse" class="ellipse" height="100px" width="100px">
+            </div>
+            <p class="english-name">Ellipse</p>
+            <span class="spanish-name">Elipse</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="82">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/QCQFqS2q/Heart.jpg" alt="heart" class="corazon" height="100px" width="100px">
+            </div>
+            <p class="english-name">Heart</p>
+            <span class="spanish-name">Corazón</span>
+        </div>
+    </div>
+
+    <div class="counter" id="counter"><div class="row">
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="83">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/wTzyB8N4/Crescent.png" alt="crescent" class="medialuna" height="100px" width="100px">
+            </div>
+            <p class="english-name">Crescent</p>
+            <span class="spanish-name">Media luna</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="84">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/sx42WxW6/pie.png" alt="Pie" class="piee" height="100px" width="100px">
+            </div>
+            <p class="english-name">Pie</p>
+            <span class="spanish-name">Pie</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="85">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/QNQCw4zQ/arrow.jpg" alt="Flecha" class="Arrow" height="100px" width="100px">
+            </div>
+            <p class="english-name">Arrow</p>
+            <span class="spanish-name">Flecha</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="86">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/GmW1cr8H/ring.jpg" alt="Anillo" class="Ring" height="100px" width="100px">
+            </div>
+            <p class="english-name">Ring</p>
+            <span class="spanish-name">Anillo</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="87">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/PrKxrLTN/Sphere-wireframe-10deg-6r.png" alt="Esfera" class="Sphere" height="100px" width="100px">
+            </div>
+            <p class="english-name">Sphere</p>
+            <span class="spanish-name">Esfera</span>
+        </div>
+    </div>
+
+    <div class="counter" id="counter"><div class="row">
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="88">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/Vk6NSYkg/Cube.png" alt="Cubo" class="Cube" height="100px" width="100px">
+            </div>
+            <p class="english-name">Cube</p>
+            <span class="spanish-name">Cubo</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="89">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/8CfPHtWr/cuboide.avif" alt="Cuboide" class="Cuboid" height="100px" width="100px">
+            </div>
+            <p class="english-name">Cuboid</p>
+            <span class="spanish-name">Cuboide</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="90">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/GtKc2N06/pyramid.png" alt="Piramide" class="Pyramid" height="100px" width="100px">
+            </div>
+            <p class="english-name">Pyramid</p>
+            <span class="spanish-name">Pirámide</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="91">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/tRNR211D/Cono.jpg" alt="Cono" class="Cone" height="100px" width="100px">
+            </div>
+            <p class="english-name">Cone</p>
+            <span class="spanish-name">Cono</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="92">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/52Tf6LG9/cilinder.png" alt="Cilindo" class="Cylinder" height="100px" width="100px">
+            </div>
+            <p class="english-name">Cylinder</p>
+            <span class="spanish-name">Cilindro</span>
+        </div>
+
+    </div>
+    </div>
+</div>
+</section>
+
+<br><h2 id="feelings-title" class="feelingsti">Feelings</h2>   
+<br><a href="#colors-title" class="clickcolors">Go to colors</a>
+<br><a href="#shapes-title" class="clickshapes">Go to shapes</a><br><br>
+
+<h2 class="feelingsquestion">Before we start, do you know what a feeling is?</h2>
+
+    <div>
+        <div style="float:left; margin-right: 30px; margin-bottom: 10px;">
+            <img class="imagefeelingsquestion" src="https://i.postimg.cc/0yJLX3Wx/feelings.webp">
+        </div>
+        
+        <div>
+            <p class="feelingstext">According to CollinsDictionary's definition, a feeling "is a general term for a subjective point of view as well as for specific sensations: to be guided by feeling rather than by facts; a feeling of sadness, of rejoicing. emotion is applied to an intensified feeling: agitated by emotion. passion is strong or violent emotion, often so overpowering that it masters the mind or judgment"</p>
+        </div>
+    </div>
+
+<section class="content">
+    <div class="counter" id="counter"><div class="row">
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="93">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/SstdhQRP/amor.jpg" alt="Amor" class="Love" height="100px" width="100px">
+            </div>
+            <p class="english-name">Love</p>
+            <span class="spanish-name">Amor</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="94">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/tJKzsrht/compasion.jpg" alt="Compasion" class="Compassion" height="100px" width="100px">
+            </div>
+            <p class="english-name">Compassion</p>
+            <span class="spanish-name">Compasión</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="95">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/NGZh8BDb/comprension.jpg" alt="Comprension" class="understanding" height="100px" width="100px">
+            </div>
+            <p class="english-name">Understanding</p>
+            <span class="spanish-name">Comprensión</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="96">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/HsbNQ5Vs/simpat-a.jpg" alt="simpatia" class="sympathy" height="100px" width="100px">
+            </div>
+            <p class="english-name">Sympathy</p>
+            <span class="spanish-name">Simpatía</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="97">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/FHmBGRLb/ternura.jpg" alt="ternura" class="tenderness" height="100px" width="100px">
+            </div>
+            <p class="english-name">Tenderness</p>
+            <span class="spanish-name">Ternura</span>
+        </div>
+
+    </div>
+
+    <div class="counter" id="counter"><div class="row">
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="98">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/P54F7jWg/alegria-1.jpg" alt="alegria" class="joy" height="100px" width="100px">
+            </div>
+            <p class="english-name">Joy</p>
+            <span class="spanish-name">Alegría</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="99">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/28dHqDK1/Foto-Deleite01.jpg" alt="deleite" class="delight" height="100px" width="100px">
+            </div>
+            <p class="english-name">Delight</p>
+            <span class="spanish-name">Deleite</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="100">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/JzPPqQmm/entusiasmo.jpg" alt="entusiasmo" class="enthusiasm" height="100px" width="100px">
+            </div>
+            <p class="english-name">Enthusiasm</p>
+            <span class="spanish-name">Entusiasmo</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="101">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/QdxqHW7z/euforia.jpg" alt="euforia" class="euphoria" height="100px" width="100px">
+            </div>
+            <p class="english-name">Euphoria</p>
+            <span class="spanish-name">Euforia</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="102">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/gJvhMYRR/exhuberancia.jpg" alt="exhuberancia" class="exuberance" height="100px" width="100px">
+            </div>
+            <p class="english-name">Exuberance</p>
+            <span class="spanish-name">Exhuberancia</span>
+        </div>
+    </div>
+
+    <div class="counter" id="counter"><div class="row">
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="103">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/j2c7bZMS/pasion-emocion.jpg" alt="pasion" class="passion" height="100px" width="100px">
+            </div>
+            <p class="english-name">Passion</p>
+            <span class="spanish-name">Pasión</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="104">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/zGVRswKq/sorpresa.jpg" alt="Sorpresa" class="surprise" height="100px" width="100px">
+            </div>
+            <p class="english-name">Surprise</p>
+            <span class="spanish-name">Sorpresa</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="105">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/x8fXtL9D/esperanza.jpg" alt="esperanza" class="hope" height="100px" width="100px">
+            </div>
+            <p class="english-name">Hope</p>
+            <span class="spanish-name">Esperanza</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="106">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/T11RK0Rw/confianza.jpg" alt="confianza" class="confidence" height="100px" width="100px">
+            </div>
+            <p class="english-name">Confidence</p>
+            <span class="spanish-name">Confianza</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="107">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/sXXFm2bH/optimismo.webp" alt="optimismo" class="optimism" height="100px" width="100px">
+            </div>
+            <p class="english-name">Optimism</p>
+            <span class="spanish-name">Optimismo</span>
+        </div>
+    </div>
+
+    <div class="counter" id="counter"><div class="row">
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="108">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/76QFWkkH/gozo.jpg" alt="gozo" class="enjoyment" height="100px" width="100px">
+            </div>
+            <p class="english-name">Enjoyment</p>
+            <span class="spanish-name">Gozo</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="109">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/2ybspKk4/J-bilo.jpg" alt="jubilo" class="rejoicing" height="100px" width="100px">
+            </div>
+            <p class="english-name">Rejoicing</p>
+            <span class="spanish-name">Júbilo</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="110">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/RZLVbNbv/gratitud-e1622503720291-800x400.jpg" alt="gratitud" class="gratitude" height="100px" width="100px">
+            </div>
+            <p class="english-name">Gratitude</p>
+            <span class="spanish-name">Gratitud</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="111">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/WbM2hdV0/aprecio.webp" alt="aprecio" class="appreciation" height="100px" width="100px">
+            </div>
+            <p class="english-name">Appreciation</p>
+            <span class="spanish-name">Aprecio</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="112">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/wMDdyGC9/conmover.webp" alt="conmovido/a" class="touched" height="100px" width="100px">
+            </div>
+            <p class="english-name">Touched</p>
+            <span class="spanish-name">Conmovido/a</span>
+        </div>
+    </div>
+
+    <div class="counter" id="counter"><div class="row">
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="113">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/Z5wzd3Mv/motivacion.jpg" alt="motivacion" class="motivation" height="100px" width="100px">
+            </div>
+            <p class="english-name">Motivation</p>
+            <span class="spanish-name">Motivación</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="114">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/y60qT2GH/curiosidad.jpg" alt="curiosidad" class="curiosity" height="100px" width="100px">
+            </div>
+            <p class="english-name">Curiosity</p>
+            <span class="spanish-name">Curiosidad</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="115">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/L86r2589/fascinacion.jpg" alt="fascinacion" class="fascination" height="100px" width="100px">
+            </div>
+            <p class="english-name">Fascination</p>
+            <span class="spanish-name">Fascinación</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="116">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/HLFKwt4n/inspiraci-n.jpg" alt="inspiracion" class="inpiration" height="100px" width="100px">
+            </div>
+            <p class="english-name">Inpiration</p>
+            <span class="spanish-name">Inspiración</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="117">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/pVf7jz9V/intriga.webp" alt="intriga" class="intrigue" height="100px" width="100px">
+            </div>
+            <p class="english-name">Intrigue</p>
+            <span class="spanish-name">Intriga</span>
+        </div>
+    </div>
+
+    <div class="counter" id="counter"><div class="row">
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="118">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/Qd9JQZ6g/paz.webp" alt="paz" class="peace" height="100px" width="100px">
+            </div>
+            <p class="english-name">Peace</p>
+            <span class="spanish-name">Paz</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="119">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/LXTt99XS/alivio.jpg" alt="alivio" class="relief" height="100px" width="100px">
+            </div>
+            <p class="english-name">Relief</p>
+            <span class="spanish-name">Alivio</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="120">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/5yK8zsLk/Confort.avif" alt="confort" class="comfort" height="100px" width="100px">
+            </div>
+            <p class="english-name">Comfort</p>
+            <span class="spanish-name">Confort</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="121">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/G3Xfzrj6/satisfaccion.webp" alt="satisfaccion" class="satisfaction" height="100px" width="100px">
+            </div>
+            <p class="english-name">Satisfaction</p>
+            <span class="spanish-name">Satisfacción</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="122">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/4dBW8bpp/nostalgia.jpg" alt="nostalgia" class="nostalgiaa" height="100px" width="100px">
+            </div>
+            <p class="english-name">Nostalgia</p>
+            <span class="spanish-name">Nostalgia</span>
+        </div>
+
+    </div>
+
+    <div class="counter" id="counter"><div class="row">
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="123">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/hvYpnDyj/asco.jpg" alt="asco" class="disgust" height="100px" width="100px">
+            </div>
+            <p class="english-name">Disgust</p>
+            <span class="spanish-name">Asco</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="124">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/0NCnQdWh/Enemistad.webp" alt="enemistad" class="enmity" height="100px" width="100px">
+            </div>
+            <p class="english-name">Enmity</p>
+            <span class="spanish-name">Enemistad</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="125">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/R0v1jJSd/horror.jpg" alt="horror" class="horrorr" height="100px" width="100px">
+            </div>
+            <p class="english-name">Horror</p>
+            <span class="spanish-name">Horror</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="126">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/nLTKZVMJ/confusi-n.jpg" alt="confusion" class="confusionn" height="100px" width="100px">
+            </div>
+            <p class="english-name">Confusion</p>
+            <span class="spanish-name">Confusión</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="127">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/C1QjBvjr/desconcierto.avif" alt="desconcierto" class="disarray" height="100px" width="100px">
+            </div>
+            <p class="english-name">Disarray</p>
+            <span class="spanish-name">Desconcierto</span>
+        </div>
+    </div>
+
+    <div class="counter" id="counter"><div class="row">
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="128">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/1zzB8Vkt/indecision.jpg" alt="indecision" class="indecisionn" height="100px" width="100px">
+            </div>
+            <p class="english-name">Indecision</p>
+            <span class="spanish-name">Indecisión</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="129">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/mDCHkbgk/FRUSTRACI-N.avif" alt="frustración" class="frustration" height="100px" width="100px">
+            </div>
+            <p class="english-name">Frustration</p>
+            <span class="spanish-name">Frustración</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="130">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/3rjGHJqb/impaciencia.jpg" alt="impaciencia" class="impatience" height="100px" width="100px">
+            </div>
+            <p class="english-name">Impatience</p>
+            <span class="spanish-name">Impaciencia</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="131">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/Njn9xyyL/ansiedad.avif" alt="Ansiedad" class="Anxiety" height="100px" width="100px">
+            </div>
+            <p class="english-name">Anxiety</p>
+            <span class="spanish-name">Ansiedad</span>
+        </div>
+
+        <div id="follow-up" class="item" onclick="load(this)" data-item-id="132">
+            <div class="img-container">
+                <img src="https://i.postimg.cc/LXKJrr3p/incomodidad.jpg" alt="incomodidad" class="discomfort" height="100px" width="100px">
+            </div>
+            <p class="english-name">Discomfort</p>
+            <span class="spanish-name">Incomodidad</span>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<h1>The Color Questions Game!</h1>
+    <h3>According to the information you saw in the dictionary about colors, you will face 20 questions testing your knowledge. Good luck!</h3>
+    <div id="pregunta"></div>
+    <div id="opciones"></div>
+    <div id="puntaje">Score: 0</div>
+
+    <script>
+        const questions = [
+            {
+                id: 1,
+                question: "Which one is the blue color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/azul.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/amarillo-html.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/aguamarina-medio.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/amatista.jpg'>" ],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/azul.jpg'>"
+            },
+            {
+                id: 2,
+                question: "Which one is the aquamarine color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/celeste.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/lavanda-brillante.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/aguamarina-medio.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/fucsia.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/aguamarina-medio.jpg'>"
+            },
+            {
+                id: 3,
+                question: "Which one is the violet color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/turquesa.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/violeta.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/blanco.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/malva.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/violeta.jpg'>"
+            },
+            {
+                id: 4,
+                question: "Which one is the pink color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/rosa.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/azul.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/malva.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/naranja-web.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/rosa.jpg'>"
+            },
+            {
+                id: 5,
+                question: "Which one is the turquoise color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/rosa.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/turquesa.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/jazmin.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/purpura.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/turquesa.jpg'>"
+            },
+            {
+                id: 6,
+                question: "Which one is the lime color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/lima-html.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/blanco.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/magenta.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/naranja-web.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/lima-html.jpg'>"
+            },
+            {
+                id: 7,
+                question: "Which one is the magenta color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/esmeralda.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/magenta.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/gris.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/jazmin.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/magenta.jpg'>"
+            },
+            {
+                id: 9,
+                question: "Which one is the grape color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/carbon.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/celeste.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/uva.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/cian.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/uva.jpg'>"
+            },
+            {
+                id: 20,
+                question: "Which one is the fuchsia color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/fucsia.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/jazmin.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/verde-html.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/violeta.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/fucsia.jpg'>"
+            },
+            {
+                id: 10,
+                question: "Which one is the golden color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/carmesi.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/dorado.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/azul.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/celeste.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/dorado.jpg'>"
+            },
+            {
+                id: 11,
+                question: "Which one is the salmon color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/lila.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/magenta.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/mostaza.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/salmon.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/salmon.jpg'>"
+            },
+            {
+                id: 12,
+                question: "Which one is the purple color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/turquesa.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/purpura.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/lima-html.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/verde-html.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/purpura.jpg'>"
+            },
+            {
+                id: 13,
+                question: "Which one is the jasmine color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/jazmin.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/gris.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/oro.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/fucsia.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/jazmin.jpg'>"
+            },
+            {
+                id: 14,
+                question: "Which one is the rubi color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/rubi.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/menta.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/negro.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/plata.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/rubi.jpg'>"
+            },
+            {
+                id: 15,
+                question: "Which one is the lilac color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/amatista.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/lila.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/negro.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/fucsia.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/lila.jpg'>"
+            },
+            {
+                id: 16,
+                question: "Which one is the khaki color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/verde-html.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/blanco.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/caqui.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/marfil.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/caqui.jpg'>"
+            },
+            {
+                id: 17,
+                question: "Which one is the olive color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/oliva.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/verde-html.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/jade.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/negro.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/oliva.jpg'>"
+            },
+            {
+                id: 18,
+                question: "Which one is the black color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/zafiro.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/negro.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/hueso.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/cobre.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/negro.jpg'>"
+            },
+            {
+                id: 19,
+                question: "Which one is the sapphire color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/salmon.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/jazmin.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/zafiro.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/amatista.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/zafiro.jpg'>"
+            },
+            {
+                id: 8,
+                question: "Which one is the indigo color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/indigo.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/esmeralda.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/rosa.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/malva.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/indigo.jpg'>"
+            },
+            {
+                id: 21,
+                question: "Which one is the crimson color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/caqui.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/carmesi.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/mostaza.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/oro.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/carmesi.jpg'>"
+            },
+            {
+                id: 22,
+                question: "Which one is the emerald color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/esmeralda.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/ocre.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/celeste.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/cian.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/esmeralda.jpg'>"
+            },
+            {
+                id: 23,
+                question: "Which one is the ocher color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/lavanda-brillante.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/ocre.jpg'>", "https://www.colores.org.es/imagenes_colores/pistacho.jpg", "https://www.colores.org.es/imagenes_colores/vino.jpg"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/ocre.jpg'>"
+            },
+            {
+                id: 24,
+                question: "Which one is the copper color?",
+                options: ["<img src='https://www.colores.org.es/imagenes_colores/cobre.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/amarillo-html.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/sandia.jpg'>", "<img src='https://www.colores.org.es/imagenes_colores/sandia.jpg'>"],
+                correctAnswer: "<img src='https://www.colores.org.es/imagenes_colores/cobre.jpg'>"
+            },
+        ];
+
+        const selectedQuestions = shuffleArray(questions).slice(0, 20);
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function showQuestion() {
+            const question = selectedQuestions[currentQuestion];
+            document.getElementById("pregunta").textContent = `Question ${question.id}: ${question.question}`;
+
+            const optionsDiv = document.getElementById("opciones");
+            optionsDiv.innerHTML = "";
+
+            question.options.forEach((option, index) => {
+                const optionDiv = document.createElement("div");
+                optionDiv.classList.add("opcion");
+                optionDiv.innerHTML = option;
+                optionDiv.addEventListener("click", () => checkAnswer(index));
+                optionsDiv.appendChild(optionDiv);
+            });
+        }
+
+        function checkAnswer(selectedOption) {
+            const question = selectedQuestions[currentQuestion];
+            if (question.correctAnswer === question.options[selectedOption]) {
+                score++;
+                document.getElementById("puntaje").textContent = `Score: ${score}`;
+                document.querySelectorAll(".opcion")[selectedOption].classList.add("correcta");
+            } else {
+                document.querySelectorAll(".opcion")[selectedOption].classList.add("incorrecta");
+            }
+
+            setTimeout(() => {
+                document.querySelectorAll(".opcion").forEach(option => option.classList.remove("correcta", "incorrecta"));
+                currentQuestion++;
+                if (currentQuestion < selectedQuestions.length) {
+                    showQuestion();
+                } else {
+                    alert(`Game over. Final score: ${score}`);
+                }
+            }, 1500);
+        }
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        showQuestion();
+
+        const restartButton = document.createElement("button");
+        restartButton.textContent = "Restart Game";
+        restartButton.addEventListener("click", () => {
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById("puntaje").textContent = "Score: 0";
+            showQuestion();
+        });
+        document.body.appendChild(restartButton);
+    </script>
+
+    <script src="Dictionary.js"></script>
+</body>
+</html>
